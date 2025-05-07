@@ -1,0 +1,44 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+  }
+  
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #E0E0E0;
+    padding: 8px 24px 8px 24px; 
+}
+
+#navbar-elements {
+    display: flex;
+    gap: 5rem;
+}
+
+.navbar-el {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+
+    align-items: center;
+    letter-spacing: -0.3px;
+    color: #212121;
+    text-decoration: none;
+}
+
+#reserve-btn {
+    align-items: center;
+
+    color: #212121;;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 125%;
+    letter-spacing: -0.3px;
+
+    padding: 16px;
+    border-radius: 6px;
+    background: var(--Color-2, #F468A554);
+}
