@@ -63,12 +63,10 @@ nav {
 
 /* Mobile version */
 #icons {
-    position: fixed;
+    position: relative;
     display: flex;
     align-items: center;
-    left: 0;
-    bottom: 10px;
-    width: 100%;
+    margin-top: auto;
     justify-content: center;
     gap: 16px;
     text-decoration: none;
@@ -89,7 +87,7 @@ nav {
     pointer-events: auto;
 }
 
-#mobile-menu {
+.mobile-menu {
     display: flex;
     flex-direction: column;
     padding: 0px;
@@ -97,6 +95,8 @@ nav {
 }
 
 .mobile-el {
+    display: flex;
+    
     color: #212121;
     background-color: #F5F5F5;
 
@@ -109,6 +109,8 @@ nav {
 
     border-radius: 6px;
     padding: 12px 10px 12px 10px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #mobile-reserve-btn {
@@ -125,6 +127,7 @@ nav {
 }
 
 #mobile-menu-btn {
+    display: none;
     position: relative;
     width: 48px;
     height: 50px;
@@ -156,6 +159,46 @@ nav {
     opacity: 1;
 }
 
+#mobile-menu-btn .arrow {
+    margin-left: auto;
+}
+
+.services-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;  
+}
+
+.services-container { 
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 40px; 
+    transition: 
+        max-height 0.5s ease-in,
+        opacity 0.5s ease-in-out
+        visibility 0s linear 0.7s;
+}
+
+.services-container.menu-open {
+    max-height: 1000px;
+    margin-top: 6px;
+    visibility: visible;
+    opacity: 1;
+    transition: 
+        max-height 0.5s ease-in,
+        opacity 0.3s ease-out,
+        visibility 0s;
+}
+
+.services-container .mobile-el {
+    background-color: #F6CEDF54;
+}
+
 @media (max-width: 768px) {
     #navbar-elements {
         display: none;
@@ -164,4 +207,14 @@ nav {
     #reserve-btn {
         display: none;
     }
+
+    #mobile-menu-btn {
+        display: block;
+    }
 }
+
+/* @media (max-height: 860px) {
+    #icons {
+        display: none;
+    }
+} */
