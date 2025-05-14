@@ -32,6 +32,7 @@ footer.hide {
 
 #main-container.hide {
     opacity: 0; 
+    visibility: hidden;
 }
 
 #footer-elements {
@@ -124,6 +125,45 @@ footer.hide {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 90%;
+    padding: 30px 40px 30px 40px;
+    display: flex;
+    width: 100%;
+}
+
+#bg-container span {
+    font-family: Playfair Display;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+#bg-container p { 
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #616161;
+}
+
+#bg-container .left-half {
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+} 
+.right-half {
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    margin: auto auto;
+    align-items: center;
+    justify-content: end;
 }
 
 /* Smaller desktop version */
@@ -318,5 +358,25 @@ footer.hide {
         background-position: center 17%;
         background-size: 250%;
         height: 291px;
+    }
+
+    #bg-container span { 
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+    }
+
+    body { 
+        line-height: 100%;
+    }
+
+    #bg-container .right-half { 
+        display: none;
+    }
+
+    #bg-container p {
+        font-size: 12px;
     }
 }
