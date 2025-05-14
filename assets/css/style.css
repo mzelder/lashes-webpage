@@ -30,6 +30,10 @@ footer.hide {
     opacity: 0;
 }
 
+#main-container.hide {
+    opacity: 0; 
+}
+
 #footer-elements {
     display: flex;
     flex-grow: 10px;
@@ -106,6 +110,20 @@ footer.hide {
 
 #main-container {
     height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+ .container {
+    height: 355px;
+ }
+
+#bg-container {
+    background-image: url("../images/bg-flowers.jpg");
+    background-position: center 55%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 90%;
 }
 
 /* Smaller desktop version */
@@ -140,9 +158,11 @@ footer.hide {
 }
 
 #mobile-dropdown {
-    margin-left: auto;
-    margin-right: auto;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 95%;
+    width: 100%;
     height: 100%;
     opacity: 0;
     pointer-events: none;
@@ -292,5 +312,11 @@ footer.hide {
     #footer-logo {
         height: 24px;
         width: 81px;
+    }
+
+    #bg-container {
+        background-position: center 17%;
+        background-size: 250%;
+        height: 291px;
     }
 }
