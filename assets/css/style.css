@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Inter', sans-serif;
     margin: 0;
   }
@@ -13,7 +15,6 @@ nav {
 
 footer {
     display: flex;
-    position: fixed;
     bottom: 0;
     opacity: 1;
     align-items: center;
@@ -165,6 +166,88 @@ footer.hide {
     align-items: center;
     justify-content: end;
 }
+
+#services-container {
+    padding: 30px 40px 30px 40px;
+    margin-top: 40px;
+}
+
+#services-container h2 {
+    font-family: Playfair Display;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+#services-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 50px;
+} 
+
+
+.card { 
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    width: 252px;
+    height: 234px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 12px;
+}
+
+.card h4 {
+    font-family: Playfair Display;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #212121; 
+    margin: 0px;
+}
+
+.card p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin: 0px;
+    color: #616161;
+}
+
+#carousel-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+#carousel-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+#carousel-wrapper.dragging {
+    cursor: grabbing;
+    scroll-behavior: auto;
+    user-select: none;
+  }
 
 /* Smaller desktop version */
 @media (max-width: 900px) {
