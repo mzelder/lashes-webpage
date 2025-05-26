@@ -172,7 +172,7 @@ footer.hide {
     margin-top: 40px;
 }
 
-#services-container h2 {
+.title-font {
     font-family: Playfair Display;
     font-weight: 600;
     font-size: 32px;
@@ -232,21 +232,20 @@ footer.hide {
     color: #616161;
 }
 
-#carousel-wrapper {
+.carousel-wrapper {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     cursor: grab;
     scrollbar-width: none;
-    scroll-behavior: smooth;
 }
 
-#carousel-wrapper::-webkit-scrollbar {
+.carousel-wrapper::-webkit-scrollbar {
     display: none;
 }
 
-#carousel-wrapper.dragging {
+.carousel-wrapper.dragging {
     cursor: grabbing;
     scroll-behavior: auto;
     user-select: none;
@@ -286,6 +285,26 @@ background-image:
 background-image: 
     linear-gradient(to bottom, rgba(255,255,255,0) 50%, white 70%),
     url('../../assets/images/card6.jpg');
+}
+
+#gallery-container {
+    padding: 30px 40px 30px 40px;
+    margin-top: 40px;
+}
+
+.gallery-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    margin-top: 50px;
+}
+
+.gallery-img {
+    width: 321px;
+    height: 167px;
+    background-size: cover;
+    flex-shrink: 0;
+    background-position: center;
 }
 
 /* Smaller desktop version */
@@ -507,7 +526,7 @@ background-image:
         padding: 0px 16px 0px 16px;
     }
 
-    #services-container h2{
+    .title-font{
         font-size: 16px;
     }
 
@@ -539,7 +558,7 @@ background-image:
         font-size: 16px;
     }
 
-    #carousel-wrapper {
+    .carousel-wrapper {
         all: initial;
     }
 
