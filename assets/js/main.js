@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // services and gallery carousels
     const carousels = document.querySelectorAll('.carousel-wrapper');
-
+    let counter = 0;
+    
     carousels.forEach(carousel => {
         let isDown = false;
         let startX;
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let animationFrame;
         let isScrolling = false;
 
-        centerCarousel(carousel);
+        if (counter !== 0) centerCarousel(carousel);
 
         const getPosX = (e) => {
             return e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
@@ -111,6 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 centerCarousel(carousel);
             }
         });
+
+        counter++;
     });
 
     function centerCarousel(carousel) {
