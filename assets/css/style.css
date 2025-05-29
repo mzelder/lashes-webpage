@@ -362,6 +362,59 @@ background-image:
     text-decoration: none;
 }
 
+#localization-container {
+    margin-top: 50px;
+    padding: 16px 40px 32px 40px;
+    display: flex;
+}
+
+#maps {
+    flex: 2;
+}
+
+#information {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0px 32px 0px 32px;
+}
+
+#information h2 {
+    font-family: Playfair Display;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.info-label {
+    margin-bottom: 20px;
+}
+
+.info-label h5{
+    font-family: Playfair Display;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #616161;
+    margin: 0px;
+}
+
+.info-label p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #616161;
+    margin: 0px;
+}
+
 /* Smaller desktop version */
 @media (max-width: 900px) {
     #reserve-btn {
@@ -666,6 +719,7 @@ background-image:
       }
 
       #reservation-container { 
+        margin-top: 25px;
         gap: 10px;
       }
 
