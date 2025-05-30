@@ -415,6 +415,21 @@ background-image:
     margin: 0px;
 }
 
+#opinion-container {
+    padding: 30px 40px 30px 40px;
+    margin-top: 50px;
+}
+
+#opinion-container h2 { 
+    font-family: Playfair Display;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 50px;
+}
+
 /* Smaller desktop version */
 @media (max-width: 900px) {
     #reserve-btn {
