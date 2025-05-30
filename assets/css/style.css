@@ -861,4 +861,48 @@ background-image:
       .info-label p {
         font-size: 10px;
       }
+
+      .centered-wrapper {
+        margin: 0px;
+      }
+      
+      .centered-container {
+        flex-direction: column;
+        padding: 20px 16px 20px 16px;
+      }
+
+      .centered-container .text {
+        margin: 0px;
+        margin-top: 1rem;
+      }
+
+      .text h2 {
+        font-size: 24px;
+        align-self: center;
+      }
+
+      .text p {
+        font-size: 12px;
+      }
+
+      #banner {
+        padding: 24px 10px 24px 10px;
+        height: 78px;
+      }
+
+      #banner h2 {
+        font-family: Playfair Display;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      .centered-container .photo img {
+        width: 200px;
+        height: 200px ;
+        object-fit: cover;
+    }
 }
