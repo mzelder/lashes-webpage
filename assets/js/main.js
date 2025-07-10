@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    loadImagesOnServicePage();
+    
     const menuBtn = document.getElementById("mobile-menu-btn");
     const mobileDropdown = document.getElementById("mobile-dropdown");
     
@@ -135,5 +137,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 behavior: 'smooth'
             });
         }
+    }
+
+    function loadImagesOnServicePage() {
+        const elements = document.querySelectorAll(".service-card");
+        elements.forEach(element => {
+            const imageName = element.getAttribute("data-image");
+            element.style.backgroundImage = `linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../../assets/images/${imageName}')`;
+            
+            element.addEventListener('mouseover', () => {
+                element.style.backgroundImage = `linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../assets/images/${imageName}')`;
+            });
+            element.addEventListener('mouseout', () => {
+                element.style.backgroundImage = `linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../../assets/images/${imageName}')`;
+            });
+        });
     }
 });

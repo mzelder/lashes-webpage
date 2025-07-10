@@ -28,6 +28,16 @@ footer {
     transition: opacity 0.3s ease;
 }
 
+h2 {
+    font-family: Playfair Display;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
 footer.hide {
     opacity: 0; 
 }
@@ -430,7 +440,7 @@ background-image:
     margin-bottom: 50px;
 }
 
-#banner {
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -442,7 +452,7 @@ background-image:
     background-repeat: no-repeat;
 }
 
-#banner h2 {
+.banner h2 {
     font-family: Playfair Display;
     font-weight: 600;
     font-size: 40px;
@@ -472,8 +482,6 @@ background-image:
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    
 }
 
 .centered-container .photo img {
@@ -508,6 +516,56 @@ background-image:
     letter-spacing: 0%;
     vertical-align: middle;
     color: #616161;
+}
+
+.rows {
+    display: flex;
+    gap: 21px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 19px;
+}
+
+
+.no-padding {
+    padding: 0px;
+}
+
+.service-card {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    object-fit: contain;
+    background-position: center;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+}
+
+.service-card h4 {
+    font-family: Playfair Display;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 40px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: white;
+}
+
+#services h2 {
+    font-family: Playfair Display;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
 }
 
 /* Smaller desktop version */
@@ -882,12 +940,12 @@ background-image:
         font-size: 12px;
       }
 
-      #banner {
+      .banner {
         padding: 24px 10px 24px 10px;
         height: 78px;
       }
 
-      #banner h2 {
+      .banner h2 {
         font-family: Playfair Display;
         font-weight: 600;
         font-size: 24px;
