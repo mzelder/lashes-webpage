@@ -542,8 +542,8 @@ background-image:
     align-items: center; 
     object-fit: contain;
     background-position: center;
-    height: 250px;
-    width: 250px;
+    height: 20vw;
+    width: 20vw;
     text-align: center;
 }
 
@@ -551,7 +551,7 @@ background-image:
     font-family: Playfair Display;
     font-weight: 600;
     font-style: SemiBold;
-    font-size: 40px;
+    font-size: 3vw;
     line-height: 125%;
     letter-spacing: 0%;
     vertical-align: middle;
@@ -566,6 +566,10 @@ background-image:
     line-height: 100%;
     letter-spacing: 0%;
     vertical-align: middle;
+}
+
+.photo #services-cards {
+    display: none;
 }
 
 /* Smaller desktop version */
@@ -959,5 +963,21 @@ background-image:
         width: 200px;
         height: 200px ;
         object-fit: cover;
+    }
+
+    .photo #services-cards {
+        display: flex;
+    }
+
+    .photo .rows {
+        display: none;
+    }
+
+    #service-container {
+        flex-direction: column-reverse;
+    }
+
+    #service-h2 {
+        display: none;
     }
 }
