@@ -572,6 +572,50 @@ background-image:
     display: none;
 }
 
+#contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 2vw; /* zmniejszony gap z 2rem do 1rem */
+    justify-content: center;
+    padding: 0.5rem; /* zapobiega przyklejaniu się do krawędzi */
+}
+
+.contact-card {
+    aspect-ratio: 5 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9AC61F;
+    border-radius: 20px;
+    padding: 1rem;
+    text-decoration: none;
+    width: 100%;
+    max-width: 300px; /* nieco zwiększony max-width dla lepszego wykorzystania przestrzeni */
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.contact-card h4 {
+    font-family: Playfair Display, serif;
+    font-weight: 600;
+    font-size: clamp(18px, 1.5vw, 24px); /* dostosowane wartości clamp */
+    line-height: 100%;
+    text-align: center;
+    color: #212121;
+    margin: 0.5rem 0;
+}
+
+.contact-card p {
+    color: #616161;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    font-size: clamp(12px, 1vw, 14px); /* dostosowane wartości clamp */
+    line-height: 150%;
+    text-align: center;
+    margin: 0.3rem 0;
+}
+
 /* Smaller desktop version */
 @media (max-width: 900px) {
     #reserve-btn {
