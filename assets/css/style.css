@@ -1024,4 +1024,23 @@ background-image:
     #service-h2 {
         display: none;
     }
+
+    .contact-link {
+        display: none;
+    }
+
+    #contact-container {
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-card {
+        aspect-ratio: 0;
+        max-width: 90%;
+    }
+
+    #contact-maps {
+        height: 225px;
+    }
 }
